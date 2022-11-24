@@ -1,0 +1,12 @@
+{% extends 'home.html' %}
+
+{% block musicPlayer %}
+<h1>Playlist</h1>
+{% for song in playlist %}
+<a href="/controls/{{song}}/">
+{{ song }}
+</a><br>
+{% endfor %}
+{% endblock %}
+
+
